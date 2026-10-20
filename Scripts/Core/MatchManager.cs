@@ -24,7 +24,7 @@ namespace CardBattle
         public static MatchManager Instance { get; private set; }
         public static bool IsRunning { get { return Instance != null && Instance.State == MatchState.Running; } }
 
-        [SerializeField] float matchDuration = 180f;
+        [SerializeField] float matchDuration = 3600f;
         [SerializeField] float startDelay = 2f;
         [Tooltip("When this many seconds remain, resource regeneration is multiplied.")]
         [SerializeField] float doubleResourceTime = 60f;
